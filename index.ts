@@ -69,14 +69,8 @@ prtt({ idx });
 const results0 = idx.search('first'); // should return 4 results
 const results1 = idx.search('global'); // should return 3 result
 
-prtt("Occurrence of word 'first'");
+prtt("For word 'first'");
 prtt((appDiv.innerHTML += '<br><br>' + JSON.stringify(results0, null, 2)));
 
-prtt("Occurrence of word 'global'");
+prtt("For word 'global'");
 prtt((appDiv.innerHTML += '<br><br>' + JSON.stringify(results1, null, 2)));
-
-// const results0 = idx.search('students'); // should return 0 results
-// const results1 = idx.search('global.'); // should return 1 result
-// const results2 = idx.search('bright*'); // should return 1 result
-
-// prtt({ results0, results1, results2 });
